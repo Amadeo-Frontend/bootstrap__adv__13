@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nextflix</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!-- Scroll to top btn -->
+    <button id="back-to-top-button" class="back-to-top-button">
+      <i class="bi bi-arrow-bar-up"></i>
+    </button>
+
+    <header>
+      <div class="container-fluid container-flex">
+        <div class="nav-logo">
+          <img src="./images/LogoMakr.png" alt="logo nextflix" />
+        </div>
+
+        <!-- Button trigger modal -->
+        <div class="mobile-toggler">
+          <a href="#" data-bs-toggle="modal" data-bs-target="#navModal">
+            <i class="bi bi-list-nested"></i>
+          </a>
+        </div>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="navModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <img src="./images/LogoMakr.png" alt="nextflix logo" />
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+
+              <div class="modal-body">
+                <div class="modal-line">
+                  <i class="bi bi-house-heart-fill"></i><a href="#">Home</a>
+                </div>
+                <div class="modal-line">
+                  <i class="bi bi-film"></i><a href="#filmes">Filmes</a>
+                </div>
+                <div class="modal-line">
+                  <i class="bi bi-camera-reels"></i><a href="#series">Séries</a>
+                </div>
+
+                <a href="#contato" type="button" class="button">Contato</a>
+              </div>
+
+              <div class="mobile-modal-footer">
+                <a target="_blank" href="#"><i class="bi bi-instagram"></i></a>
+                <a target="_blank" href="#"><i class="bi bi-facebook"></i></a>
+                <a target="_blank" href="#"><i class="bi bi-tiktok"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="filmes">
+      <div class="container-fluid container-flex">
+        <h2 class="text-white-50 py-5">
+          <i class="bi bi-film"></i> Conheça nossa seleção de filmes
+        </h2>
+
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active py-5" data-bs-interval="3000">
+              <img
+                src="/images/1.jpeg"
+                class="carousel_img d-block w-100 object-fit-lg-contain"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item my-5" data-bs-interval="3000">
+              <img
+                src="/images/2.jpeg"
+                class="carousel_img d-block w-100 object-fit-lg-contain"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item my-5" data-bs-interval="3000">
+              <img
+                src="/images/3.jpeg"
+                class="carousel_img d-block w-100 object-fit-lg-contain"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="series">
+      <div class="container-fluid container-flex">
+        <h2 class="text-white-50 py-5">
+          <i class="bi bi-camera-reels"></i> Conheça nossas séries
+        </h2>
+        <div class="card_container">
+          <div class="card">
+            <img src="images/2.jpeg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <section class="d-flex justify-content-between">
+                <div>
+                  <i class="bi bi-play-circle-fill card-icon"></i>
+                  <i class="bi bi-plus-circle card-icon"></i>
+                </div>
+                <div>
+                  <i class="bi bi-arrow-down-circle card-icon"></i>
+                </div>
+              </section>
+              <section
+                class="d-flex align-items-center justify-content-between"
+              >
+                <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0)">
+                  97% match
+                </p>
+                <span class="m-2 netflix-card-text text-white"
+                  >Limited Series</span
+                >
+                <span class="border netflix-card-text p-1 text-white">HD</span>
+              </section>
+              <span class="netflix-card-text text-white"
+                >Provocative • Psychological • Thriller</span
+              >
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/2.jpeg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <section class="d-flex justify-content-between">
+                <div>
+                  <i class="bi bi-play-circle-fill card-icon"></i>
+                  <i class="bi bi-plus-circle card-icon"></i>
+                </div>
+                <div>
+                  <i class="bi bi-arrow-down-circle card-icon"></i>
+                </div>
+              </section>
+              <section
+                class="d-flex align-items-center justify-content-between"
+              >
+                <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0)">
+                  97% match
+                </p>
+                <span class="m-2 netflix-card-text text-white"
+                  >Limited Series</span
+                >
+                <span class="border netflix-card-text p-1 text-white">HD</span>
+              </section>
+              <span class="netflix-card-text text-white"
+                >Provocative • Psychological • Thriller</span
+              >
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/2.jpeg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <section class="d-flex justify-content-between">
+                <div>
+                  <i class="bi bi-play-circle-fill card-icon"></i>
+                  <i class="bi bi-plus-circle card-icon"></i>
+                </div>
+                <div>
+                  <i class="bi bi-arrow-down-circle card-icon"></i>
+                </div>
+              </section>
+              <section
+                class="d-flex align-items-center justify-content-between"
+              >
+                <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0)">
+                  97% match
+                </p>
+                <span class="m-2 netflix-card-text text-white"
+                  >Limited Series</span
+                >
+                <span class="border netflix-card-text p-1 text-white">HD</span>
+              </section>
+              <span class="netflix-card-text text-white"
+                >Provocative • Psychological • Thriller</span
+              >
+            </div>
+          </div>
+          <div class="card">
+            <img src="images/2.jpeg" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <section class="d-flex justify-content-between">
+                <div>
+                  <i class="bi bi-play-circle-fill card-icon"></i>
+                  <i class="bi bi-plus-circle card-icon"></i>
+                </div>
+                <div>
+                  <i class="bi bi-arrow-down-circle card-icon"></i>
+                </div>
+              </section>
+              <section
+                class="d-flex align-items-center justify-content-between"
+              >
+                <p class="netflix-card-text m-0" style="color: rgb(0, 186, 0)">
+                  97% match
+                </p>
+                <span class="m-2 netflix-card-text text-white"
+                  >Limited Series</span
+                >
+                <span class="border netflix-card-text p-1 text-white">HD</span>
+              </section>
+              <span class="netflix-card-text text-white"
+                >Provocative • Psychological • Thriller</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato">
+      <div class="container-fluid container-flex">
+        <h2 class="text-white-50 py-5">
+          <i class="bi bi-wechat"></i> Entre em contato
+        </h2>
+        <div class="contato_form row">
+          <div class="form-floating mb-3 col-4">
+            <input
+              type="text"
+              class="form-control"
+              id="floatingNome"
+              placeholder="Nome"
+            />
+            <label for="floatingNome">Nome</label>
+          </div>
+          <div class="form-floating mb-3 col-4">
+            <input
+              type="email"
+              class="form-control"
+              id="floatingInput"
+              placeholder="name@example.com"
+            />
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="col-4">
+            <button type="submit" class="btn btn-primary mb-3">Enviar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <footer class="py-5">
+        <div class="container-fluid container-flex">
+          <p>
+            &copy Nextflix - desde 2023.<br />
+            Todos os direitos reservados.
+          </p>
+        </div>
+      </footer>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
