@@ -300,11 +300,10 @@ header .mobile-toggler {
 
 .contato_form {
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
-
+/*---Top button-----*/
 .back-to-top-button {
     z-index: 99;
     position: fixed;
@@ -332,6 +331,20 @@ footer p {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: 500;
+}
+
+.media-footer {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 30px;
+}
+
+.media-footer a:hover {
+    color: #0078d0;
 }
 
 @media screen and (min-width: 768px) and (max-width:1023px) {
@@ -343,6 +356,7 @@ footer p {
         margin: 50px;
     }
 }
+
 
 @media(max-width:450px) {
     .carousel_img {
